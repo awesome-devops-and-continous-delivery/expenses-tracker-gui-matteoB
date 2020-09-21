@@ -1,0 +1,11 @@
+name: Build hello world
+on: [push]
+jobs:
+  build_simple_server_related_things:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+      with:
+        ref: refs/heads/master
+    - name: Npm Install
+      run: echo 'hello world'
